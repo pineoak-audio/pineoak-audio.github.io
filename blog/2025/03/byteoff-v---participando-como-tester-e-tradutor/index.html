@@ -1022,47 +1022,31 @@
 <p>A maioria dos bugs reportados foi corrigida, e a tradução para português brasileiro foi implementada totalmente, com exceção da tela de fim.</p>
 <p>O jogo ganhou o prêmio de melhor jogo da <em>game jam</em> anual ByteOff em sua quinta edição. </p>
 <p>Caso queira experimentar aqui está o jogo. <strong>BackwardsQuest</strong> é uma aventura de fantasia que você joga ao contrário. Você é um Lorde das Trevas empunhando uma espada amaldiçoada feita de dentes. Você acabou de matar o Rei. Mas por quê? Você estava prestes a fazer o mesmo com a Princesa quando ela lançou aquele irritante Feitiço de Reversão do Tempo. Agora sua história distorcida será revelada… do fim até o começo.</p>
-<html>
-    <head>
-        <style>
-            body, html {
-                margin: 0;
-                padding: 0;
-            }
-            body {
-                background-color: #000000;
-                background-image: url('https://nes.artix.com/img/NES_BackwardsQuest.png');
-                background-size: contain;
-                background-position: 50% 50%;
-                background-repeat: no-repeat;
-            }
-            .ejs_parent {
-                background-color: transparent !important;
-            }
-            .ejs_game {
-                background-color: transparent !important;
-            }
-            .ejs_start_button {
-                bottom: 100px !important;
-            }
-        </style>
-    </head>
-    <body>
-        <div style="width:100%;height:100%;max-width:100%">
-            <div id="game"></div>
-        </div>
-        <script>
-            EJS_player = "#game";
-            EJS_core = "nes";
-            EJS_gameName = "BackwardsQuest.pt";
-            EJS_color = "#ff6400";
-            EJS_startOnLoaded = false;
-            EJS_pathtodata = "https://nes.artix.com/data/";
-            EJS_gameUrl = "BackwardsQuest-Portuguese009.nes";
-        </script>
-        <script src="https://nes.artix.com/data/loader.js"></script>
-    </body>
-</html>
+<div class="language-text highlight"><pre><span></span><code>&lt;style&gt;
+        .ejs_parent {
+            background-color: transparent !important;
+        }
+        .ejs_game {
+            background-color: transparent !important;
+        }
+        .ejs_start_button {
+            bottom: 100px !important;
+        }
+&lt;/style&gt;
+    &lt;div style=&quot;width:100%;height:100%;max-width:100%&quot;&gt;
+        &lt;div id=&quot;game&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+        EJS_player = &quot;#game&quot;;
+        EJS_core = &quot;nes&quot;;
+        EJS_gameName = &quot;BackwardsQuest.pt&quot;;
+        EJS_color = &quot;#ff6400&quot;;
+        EJS_startOnLoaded = false;
+        EJS_pathtodata = &quot;https://nes.artix.com/data/&quot;;
+        EJS_gameUrl = &quot;BackwardsQuest-Portuguese009.nes&quot;;
+    &lt;/script&gt;
+    &lt;script src=&quot;https://nes.artix.com/data/loader.js&quot;&gt;&lt;/script&gt;
+</code></pre></div>
 
 
 
