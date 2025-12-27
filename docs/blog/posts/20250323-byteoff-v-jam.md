@@ -19,7 +19,7 @@ excerpt: A experiência de participar QA e Tradutor de uma game jam para jogos d
 social_share: true
 related_posts:
   - 20250305-ost-jam.md
-draft: true
+draft: false
 ---
 # ByteOff V - participando como tester e tradutor
 
@@ -72,6 +72,7 @@ Organizar dessa forma foi crucial, pois a referência do texto nem sempre segue 
 Para a formatação do texto em si, utilizei uma ferramenta feita com inteligência artificial para o único propósito de me deixar visualizar se estou escrevendo sem exceder os limites da caixa de texto.
 
 ![alt text](20250323-byteoff-v-jam-text.png)
+
 ### Limitações
 Na hora de traduzir, além da barreira linguística, haviam algumas limitações visto que o jogo não é inspirado em NES, mas feito para ser jogado no console infracitado. As principais limitações eram:
 
@@ -79,8 +80,60 @@ Na hora de traduzir, além da barreira linguística, haviam algumas limitações
 - **Limites da caixa de texto:**
 	- **Horizontal:** onde só podia escrever de 18 a 20 caracteres;
 	- **Vertical:** onde só não podia escrever demais ou o jogo ia ficar repetindo o mesmo arquivo de diálogo
+
 ## O que aprendi?
+Bem, aprendi que uma frase pode ser escrita de diversas maneiras, firam elas ou não a língua portuguesa. 
+
+> Ah, caso ultrapasse o limite da caixa de texto, o jogo irá travar. O motivo? AInda não sei, mas hei de descobrir.
+
+Também entendi que no processo de tradução acaba-se moldando a história pela perspectiva do tradutor, de uma maneira que consigamos manter a originalidade do autor. Nem sempre a tradução ao pé da letra é a melhor escolha.
 
 
+## Resultado
+A maioria dos bugs reportados foi corrigida, e a tradução para português brasileiro foi implementada totalmente, com exceção da tela de fim.
 
-## Referências Bibliográficas
+O jogo ganhou o prêmio de melhor jogo da _game jam_ anual ByteOff em sua quinta edição. 
+
+Caso queira experimentar aqui está o jogo. **BackwardsQuest** é uma aventura de fantasia que você joga ao contrário. Você é um Lorde das Trevas empunhando uma espada amaldiçoada feita de dentes. Você acabou de matar o Rei. Mas por quê? Você estava prestes a fazer o mesmo com a Princesa quando ela lançou aquele irritante Feitiço de Reversão do Tempo. Agora sua história distorcida será revelada… do fim até o começo.
+
+<html>
+    <head>
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+            }
+			body {
+				background-color: #000000;
+				background-image: url('https://nes.artix.com/img/NES_BackwardsQuest.png');
+				background-size: contain;
+				background-position: 50% 50%;
+				background-repeat: no-repeat;
+			}
+			.ejs_parent {
+				background-color: transparent !important;
+			}
+			.ejs_game {
+				background-color: transparent !important;
+			}
+			.ejs_start_button {
+				bottom: 100px !important;
+			}
+        </style>
+    </head>
+    <body>
+        <div style="width:100%;height:100%;max-width:100%">
+            <div id="game"></div>
+        </div>
+        <script>
+            EJS_player = "#game";
+            EJS_core = "nes";
+            EJS_gameName = "BackwardsQuest.pt";
+            EJS_color = "#ff6400";
+            EJS_startOnLoaded = false;
+            EJS_pathtodata = "https://nes.artix.com/data/";
+			EJS_gameUrl = "BackwardsQuest-Portuguese009.nes";
+        </script>
+        <script src="https://nes.artix.com/data/loader.js"></script>
+    </body>
+</html>
