@@ -96,20 +96,7 @@ O jogo ganhou o prêmio de melhor jogo da _game jam_ anual ByteOff em sua quinta
 
 Caso queira experimentar aqui está o jogo. **BackwardsQuest** é uma aventura de fantasia que você joga ao contrário. Você é um Lorde das Trevas empunhando uma espada amaldiçoada feita de dentes. Você acabou de matar o Rei. Mas por quê? Você estava prestes a fazer o mesmo com a Princesa quando ela lançou aquele irritante Feitiço de Reversão do Tempo. Agora sua história distorcida será revelada… do fim até o começo.
 
-<html>
-    <head>
-        <style>
-            body, html {
-                margin: 0;
-                padding: 0;
-            }
-			body {
-				background-color: #000000;
-				background-image: url('https://nes.artix.com/img/NES_BackwardsQuest.png');
-				background-size: contain;
-				background-position: 50% 50%;
-				background-repeat: no-repeat;
-			}
+    <style>
 			.ejs_parent {
 				background-color: transparent !important;
 			}
@@ -119,9 +106,7 @@ Caso queira experimentar aqui está o jogo. **BackwardsQuest** é uma aventura d
 			.ejs_start_button {
 				bottom: 100px !important;
 			}
-        </style>
-    </head>
-    <body>
+    </style>
         <div style="width:100%;height:100%;max-width:100%">
             <div id="game"></div>
         </div>
@@ -135,5 +120,3 @@ Caso queira experimentar aqui está o jogo. **BackwardsQuest** é uma aventura d
 			EJS_gameUrl = "BackwardsQuest-Portuguese009.nes";
         </script>
         <script src="https://nes.artix.com/data/loader.js"></script>
-    </body>
-</html>
